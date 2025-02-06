@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Page Title</title>
+  <link rel="stylesheet" type="" href="./style.css">
+</head>
+
+<body>
+  <section>
+    <img src="./imgs/mubas.png" alt="mubas logo">
+    <div>
+      <!-- header of the form -->
+      <h1>INCUBATION CENTRE</h1>
+      <h2>March 2025</h2>
+      <p>
+        This form MUST be completed in BLOCK LETTERS
+        and returned together with required attachments to
+        the Incubation Hub Manager, MUBAS, P/Bag 303,
+
+        Blantyre 3
+      </p>
+    </div>
+  </section>
+
+
+
+  <fieldset>
+    <!-- uploading Passport photo -->
+    <legend>Upload Passport Photo</legend>
+    <label for="Passport_photo">Passport photo:</label>
+    <input accept=" image/jpeg, image/png, image/webp" type="file" name="Passport" id="Passport_photo">
+  </fieldset>
+  <section>
+
+  </section>
+  <fieldset>
+    <h2>Candidate information</h2>
+    <fieldset>
+      <legend>Fullname:</legend>
+      <label for="surname">Surname:</label>
+      <input type="text" name="surname" id="surname">
+      <label for="firstname">Firstname:</label>
+      <input type="text" name=" firstname" id="firstname">
+      <label for="initials">initials:</label>
+      <input type="text" name="initials" id="initials">
+
+    </fieldset>
+    <fieldset>
+      <legend>biographical data</legend>
+      <label for="dob">Date of birth:</label>
+      <input type="date" name="dob" id="dob">
+      <fieldset>
+
+        <legend>Sex:</legend>
+        <label for="female">female</label>
+        <input type="radio" name="sex" id="female" checked>
+        <label for="male">male</label>
+        <input type="radio" name="sex" id="male">
+      </fieldset>
+      <label for="nationality">nationality:</label>
+      <input type="text" name="nationality" id="nationality">
+      <fieldset>
+        <legend>Geographical data</legend>
+
+        <label for="home_district">Home District</label>
+        <input type="text" name="home_district" id="home_district">
+
+        <label for="TA">T/A:</label>
+        <input type="text" name="TA" id="TA">
+
+        <label for="village">village </label>
+        <input type="text" name="village" id="village">
+      </fieldset>
+    </fieldset>
+
+    <fieldset>
+      <legend>Contact details</legend>
+
+      <label for="home_district">Contact address</label>
+      <input type="text" name="contact_address" id="contact_address">
+
+      <label for="telnumber">Tel:</label>
+      <input type="tel" name="telnumber" id="telnumber">
+
+      <label for="mobile">village: </label>
+      <input type="tel" name="mobile" id="mobile">
+
+      <label for="email_add">email:</label>
+      <input type="email" name="email_add" id="email_add">
+    </fieldset>
+  </fieldset>
+  <!--TODO: addresses should be changed to text area -->
+  <fieldset>
+    <h2>Next of Kin</h2>
+    <fieldset>
+      <legend>Name:</legend>
+      <label for="name">Name:</label>
+      <input type="text" name="name" id="name">
+      <label for="relationship">Relationship:</label>
+      <input type="text" name=" relationship" id="relationship">
+      <label for="address">address :</label>
+      <textarea id="address">
+
+      </textarea>
+    </fieldset>
+    <fieldset>
+      <legend>Contact details</legend>
+
+
+      <label for="kintelnumber">Tel:</label>
+      <input type="tel" name="kintelnumber" id="kintelnumber">
+
+      <label for="kintelnumber">village: </label>
+      <input type="tel" name="kinmobile" id="kinmobile">
+
+      <label for="kin_email_add">email:</label>
+      <input type="email" name="kin_email_add" id="kin_email_add">
+    </fieldset>
+  </fieldset>
+
+  <fieldset>
+    <h2>Academic Record</h2>
+    <p>Indicate highest level of education by ticking appropriate box</p>
+    <fieldset>
+
+      <label for="PLSCE">PLSCE</label>
+      <input type="radio" name="record" id="PLSCE">
+      <label for="JSCE">JSCE</label>
+      <input type="radio" name="record" id="JSCE" checked>
+      <label for="MSCE">MSCE</label>
+      <input type="radio" name="record" id="MSCE">
+      <label for="BSC">BSC</label>
+      <input type="radio" name="record" id="BSC">
+      <label for="Other">Other</label>
+      <input type="radio" name="record" id="Other">
+
+      <label for="plscespecify">specify:</label>
+      <textarea rows="1" id="plscespecify" cols="7"></textarea>
+    </fieldset>
+  </fieldset>
+
+  <fieldset>
+    <h2>Would you like to declare any disability that would impact your learning</h2>
+    <fieldset>
+
+      <label for="NO">no:</label>
+      <input type="radio" name="NO" id="NO">
+      <label for="YES">yes:</label>
+
+      <input type="radio" name="YES" id="YES">
+      <label for="specify">specify:</label>
+      <textarea id="specify" rows="1" cols="7"></textarea>
+    </fieldset>
+  </fieldset>
+
+
+  <fieldset>
+
+    <h2>Program Specifications</h2>
+    <p> Please indicate the course applied for by checking in the boxes</p>
+
+    <table>
+      <thead>
+        <tr>
+
+
+          <th>SN</th>
+          <th>Name of course</th>
+          <th>fee</th>
+          <th>topics to include</th>
+          <th>weekday(tick)</th>
+
+          <th>weekend(tick)</th>
+
+        </tr>
+      </thead>
+      <tbody>
+
+        <tr>
+          <th>1</th>
+          <td>Food processing</td>
+
+          <td>MK200,000</td>
+
+          <td>
+            <table>
+              <tr>
+
+                <td>Pasta(spaghetti making)</td>
+              </tr>
+              <tr>
+                <td>Peanut Butter</td>
+              </tr>
+              <tr>
+                <td>Baking
+                  <ul>
+                    <li>cake baking basics</li>
+                    <li>bread production</li>
+                    <li>scones</li>
+                  </ul>
+
+                </td>
+              </tr>
+              <tr>
+                <td>Mayonnaise making</td>
+              </tr>
+              <tr>
+                <td>Jam making</td>
+              </tr>
+
+            </table>
+
+          </td>
+
+          <td>
+            <input type="checkbox" name="class" value="">
+          </td>
+
+          <td>
+
+            <input type="checkbox" name="class" value="">
+          </td>
+        </tr>
+
+        <tr>
+          <th>2</th>
+          <td>Food processing</td>
+
+          <td>MK200,000</td>
+          <td></td>
+          <td>
+
+            <input type="checkbox" name="class" value="">
+          </td>
+
+          <td>
+
+            <input type="checkbox" name="class" value="">
+          </td>
+        </tr>
+
+        <tr>
+          <th>3</th>
+          <td>Detergent Making</td>
+
+          <td>MK200,000</td>
+
+          <td>
+            <table>
+              <tr>
+
+                <td>Dish Wash</td>
+              </tr>
+              <tr>
+                <td>Hair shampoo</td>
+              </tr>
+              <tr>
+                <td>Car shampoo</td>
+              </tr>
+              <td>Pine gel</td>
+              <tr>
+                <td>Tablet soap</td>
+              </tr>
+
+              <tr>
+                <td>Laundry</td>
+              </tr>
+            </table>
+
+          </td>
+
+          <td>
+            <input type="checkbox" name="class" value="">
+          </td>
+
+          <td>
+
+            <input type="checkbox" name="class" value="">
+          </td>
+        </tr>
+
+        <tr>
+          <th>4</th>
+          <td>Audio-visual Media Production (radio/video/print)</td>
+
+          <td>MK200,000</td>
+
+          <td>
+            <table>
+              <tr>
+
+                <td>Radio Presentaion and program production</td>
+              </tr>
+              <tr>
+                <td>Videography and editing skills</td>
+              </tr>
+              <tr>
+                <td>Newspaper and online writing skills</td>
+              </tr>
+              <tr>
+                <td>Photojournalism</td>
+              </tr>
+
+            </table>
+
+          </td>
+
+          <td>
+            <input type="checkbox" name="class" value="">
+          </td>
+
+          <td>
+
+            <input type="checkbox" name="class" value="">
+          </td>
+        </tr>
+
+    </table>
+
+    </td>
+    </tr>
+
+
+    </tbody>
+    <table>
+
+    </table>
+    </table>
+  </fieldset>
+</body>
+
+</html>
