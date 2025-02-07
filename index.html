@@ -2,10 +2,9 @@
 <html>
 
 <head>
-  <title>Page Title</title>
+  <title>incubation application form</title>
   <link rel="stylesheet" type="" href="./style.css">
 </head>
-<!-- TODO: relationship should be drop down -->
 
 <body>
   <section>
@@ -79,8 +78,8 @@
       <legend>Contact details</legend>
 
       <label for="home_district">Contact address</label>
-      <input type="text" name="contact_address" id="contact_address">
-
+      <textarea colspan="7" rowspan="2" name="contact_address" id="contact_address">
+      </textarea>
       <label for="telnumber">Tel:</label>
       <input type="tel" name="telnumber" id="telnumber">
 
@@ -91,7 +90,6 @@
       <input type="email" name="email_add" id="email_add">
     </fieldset>
   </fieldset>
-  <!--TODO: addresses should be changed to text area -->
   <fieldset>
     <h2>Next of Kin</h2>
     <fieldset>
@@ -99,6 +97,14 @@
       <label for="name">Name:</label>
       <input type="text" name="name" id="name">
       <label for="relationship">Relationship:</label>
+      <select name="relationship" id="relationship">
+        <option value="mother">mother</option>
+        <option value="sister">sister</option>
+        <option value="aunt">aunt</option>
+        <option value="uncle">uncle</option>
+        <option value="brother">brother</option>
+        <option value="gurdian" selected>guardian</option>
+      </select>
       <input type="text" name=" relationship" id="relationship">
       <label for="address">address :</label>
       <textarea id="address">
@@ -107,7 +113,8 @@
     </fieldset>
     <fieldset>
       <legend>Contact details</legend>
-
+      <!-- TODO: addition of form validation -->
+      <!-- FIX: form should only select one -->
 
       <label for="kintelnumber">Tel:</label>
       <input type="tel" name="kintelnumber" id="kintelnumber">
@@ -119,7 +126,6 @@
       <input type="email" name="kin_email_add" id="kin_email_add">
     </fieldset>
   </fieldset>
-
   <fieldset>
     <h2>Academic Record</h2>
     <p>Indicate highest level of education by ticking appropriate box</p>
@@ -226,7 +232,7 @@
 
         <tr>
           <th>2</th>
-          <td>Food processing</td>
+          <td>Tailoring and design</td>
 
           <td>MK200,000</td>
           <td></td>
